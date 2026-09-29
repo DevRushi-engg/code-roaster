@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-frame: #111111;
+  --color-canvas: #F5F5F3;
+  --color-panel: #FDFDFD;
+  --color-subtle: #E6E6E2;
+  --color-accent: #D94826;
+
+  --font-family-sans: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-family-mono: var(--font-jetbrains-mono), ui-monospace, "Courier New", monospace;
+}
+
+/* Drafting grid background */
+body {
+  background-color: var(--color-canvas);
+  background-image:
+    linear-gradient(rgba(17, 17, 17, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(17, 17, 17, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Thin dark scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-canvas);
+}
+::-webkit-scrollbar-thumb {
+  background: #999;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
